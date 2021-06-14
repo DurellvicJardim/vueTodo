@@ -19,7 +19,7 @@ How to edit a task-
 4. Press the new enter button located next to the input field.
 5. The editing process should have occured.
 
-How to 'complete' a task- <br><br>
+How to 'complete' a task-
 1. Select the check mark/tick mark.
 2. The task should be marked as completed.
 
