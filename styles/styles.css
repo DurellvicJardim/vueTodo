@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.strikeout {
+    text-decoration: line-through;
+    background: rgb(115, 255, 0);
+    color: rgb(37, 106, 25);
+    padding: 0.4rem;
+    border-radius: 25px;
+}
+
+.highPriority {
+    background: rgb(218, 5, 5);
+    color: rgb(101, 5, 5);
+    padding: 0.4rem;
+    border-radius: 25px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(100deg, #000000, #292929);
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    background: linear-gradient(100deg, #aeaeae, #909090);
+    padding: 0.4rem;
+    border-radius: 25px;
+    margin: 0.5rem;
+}
+
+p {
+    float: left;
+}
+
+.inputBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputBar input{
+    padding: 10px;
+    min-height: 50px;
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 450px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+}
+
+.addButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: white;
+    margin: 0.25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.updateButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: white;
+    margin: 0.25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inputBar button:hover{
+    background-color: #c6c6c6;
+}
+
+.doneButton {
+    font-size: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: rgb(56, 52, 52);
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+}
+
+.editButton{
+    font-size: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: rgb(56, 52, 52);
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+}
+
+.deleteButton {
+    font-size: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: rgb(56, 52, 52);
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+}
+
+.priorityButton {
+    font-size: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: rgb(56, 52, 52);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.25rem;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2rem;
+}

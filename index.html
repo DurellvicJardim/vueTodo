@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Vue Todo</title>
+</head>
+<body>
+
+    <div id="myApp">
+
+        <div id="container">
+
+            <header>
+                <h1>{{title}}</h1>
+            </header>
+
+            <form action="" class="form">
+
+                <div v-if="!edited">
+                    <div class="inputBar">
+                    <input type="text" placeholder="Enter Todo Item" v-model="todo" class="input">
+                    <button @click="addTodo" type="button" class="addButton"><i class="fas fa-plus"></i></button>
+                    </div>
+                    
+                </div>
+
+                <div v-else>
+                    <div class="inputBar">
+                    <input type="text" placeholder="Edit Todo Item" v-model="todo" class="input">
+                    <button @click="updateTodo" type="button" class="updateButton"><i class="fas fa-level-up-alt"></i></button>
+                    </div>
+                </div>
+
+            </form>
+
+            <ul class="listContainer">
+                <li v-for="(todo, i) in myList" id="todoItem" class="listedItem">
+                    <p class="todoText">{{todo}}</p>
+                    <button @click="toggleDone(i)" type="button" class="doneButton"><i class="fas fa-check"></i></button>
+                    <button @click="editTodo(i, todo)" type="button" class="editButton"><i class="fas fa-pen-fancy"></i></button>
+                    <button @click="deleteTodo(i)" type="button" class="deleteButton"><i class="far fa-trash-alt"></i></button>
+                    <button @click="categorisePriority(i)" type="button" class="priorityButton"><i class="fas fa-exclamation"></i></button>
+                    <br>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
